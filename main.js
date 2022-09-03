@@ -32,7 +32,7 @@ addBtn.addEventListener("click", function () {
 });
 
 saveBtn.addEventListener("click", function () {
-  if (input.value !== "") {
+  if (input.value.trim() !== "") {
     current.firstElementChild.innerText = input.value;
     console.log(current);
     current.lastElementChild.firstElementChild.style.display = "inline-block";
